@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 253, 251);
+}
+
+header {
+    background-color: rgb(6, 32, 230);
+   color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 3;
+}
+
+.card {
+    background-color: rgb(220, 41, 88);
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: rgb(136, 138, 30);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: fit-content;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 8px 0;
+}
+
+.sidebar li:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(6, 32, 230);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+footer:hover{
+    color: white;
+    background-color: rgb(93, 243, 146);
+}
+
+@media(max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .blog-container {
+        justify-content: center;
+    }
+}
